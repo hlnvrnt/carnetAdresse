@@ -1,0 +1,99 @@
+.formulaire-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  align-items: center;
+  flex-direction: column;
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid #9e7461;
+    background-color: #fdfff7;
+    box-shadow: 0 2px 2px #f8af9083;
+    width: 60vw;
+    height: 80vh;
+    background-color: #ffffff;
+    position: relative;
+
+    h1 {
+      font-weight: 300;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .uploadFile {
+        display: flex;
+        flex-direction: column;
+        p {
+          justify-self: start;
+        }
+        .uploadInput {
+          display: flex;
+          width: fit-content;
+          align-self: center;
+        }
+        .uploadBox {
+          width: 10rem;
+          .placeholderPic {
+            border: dotted;
+            padding: 1rem;
+            border-radius: 15px;
+            width: 100%;
+            cursor: pointer;
+          }
+          .uploadedPic {
+            width: 100%;
+            border: none;
+          }
+        }
+        #photoUpload {
+          display: none;
+        }
+      }
+
+      input {
+        width: 100%;
+        font-size: 25px;
+        border-top-style: none;
+        border-left-style: none;
+        border-right-style: none;
+      }
+      input:focus {
+        outline: none;
+      }
+
+      .add-button {
+        display: flex;
+        justify-content: center;
+        button {
+          background-color: var(--secondary-color);
+          color: white;
+          font-size: 1.5rem;
+          border-radius: 10px;
+          border: none;
+          width: 10vw;
+          height: 5vh;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+          background-color: var(--hover-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+}
+
+html,
+body,
+:root {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+body {
+  background-image: url("/images/fond.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+}
+
+:root {
+  --color-text: black;
+  --primary-color: white;
+  --secondary-color: #9e7461;
+  --hover-color: #e0b39e;
+  --title-font-size: 50px;
+  --text-second-font-size: 20px;
+}
