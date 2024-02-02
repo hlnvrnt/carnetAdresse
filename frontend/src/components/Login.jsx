@@ -44,7 +44,7 @@ function Login() {
             onChange={(e) => setInputEmail(e.target.value)}
           />
           <input
-            type="text"
+            type="password"
             name="password"
             placeholder="Mot de passe"
             onChange={(e) => setInputPassword(e.target.value)}
